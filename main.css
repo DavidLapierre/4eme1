@@ -1,0 +1,526 @@
+:root {
+    --couleur1: #D89584;
+    --couleur2: #F4F4F4;
+}
+
+body {
+    margin : 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+header {
+    background : url(cover_overlay.png) no-repeat center/100% 100%,
+                 url(Eye.png) no-repeat center/100% 100%;
+    background-size : cover;
+    height : 500px;
+}
+
+div.bandeau {
+    overflow: hidden;
+    text-align: center;
+    margin-right: 0;
+    margin-left: auto;
+    width: 400px;
+    background-color: BLACK;
+    border : 5px solid white;
+    transform-origin: 50% 50%;
+    transform: rotate(45deg) translate(80px,-40px);
+    box-shadow: 0 10px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    transition: all 0.3s cubic-bezier(.25,.8,.25,1);
+}
+
+div.bandeau:hover {
+    box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+    font-size: 1.1em;
+}
+
+
+nav ul { 
+    /* margin-left : 80%; margin-right : 10px; margin-top: 0; */
+    display: inline-block;}
+
+nav li { list-style-type: none; font-size: 1.5em; text-align: center;
+            font-family: 'Cabin Sketch', cursive;
+          }
+
+nav a {text-decoration: none; color : white;}
+
+i.fa-arrow-alt-circle-right {display: none;}
+
+header h1, header h2 {
+    text-align: center;
+    text-shadow: 0 0 5px black;
+}
+
+header h1 {
+    color : white;
+    font-size : 40px; 
+    margin-top :0;
+    padding-top: 100px;
+}
+
+header div.separateur {
+    height:1px;
+    background-color: white;
+    width : 85%;
+    margin : 0 auto;
+}
+
+header h2 {
+    color : rgb(240, 131, 41);
+    font-size: 45px;
+    font-style: italic;
+}
+
+section.grise {
+    /* background: url(triangle2white.svg) no-repeat center  bottom/100%; */
+    background-color: var(--couleur2);
+    height : 650px;
+    
+}
+
+section.grise div.separateur {
+    height:1px;
+    background-color: #979797;
+    width : 150px;
+    margin : 20px auto;
+}
+
+section.grise .intro {
+    padding-top : 30px;
+    width : 65%;
+    margin : 0 20px 0 0px;
+    text-align: center;
+    padding-top : 20px;
+}
+
+section.grise .intro p {
+    font-size : 22px;
+    text-align: justify;
+    margin-left : auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+section.blanche {
+    /* background: url(triangle2white.svg) no-repeat center  bottom/100%; */
+    background-color: white;
+    height : 650px;
+}
+
+section.blanche div.separateur {
+    height:1px;
+    background-color: #979797;
+    width : 150px;
+    margin : 20px auto;
+}
+
+section.blanche .intro {
+    padding-top : 30px;
+    width : 65%;
+    margin : 0px 20px 0 30px;
+    text-align: center;
+    padding-top : 20px;
+}
+
+section.blanche .intro p {
+    font-size : 22px;
+    text-align: justify;
+    margin-left : auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+/* SECTION VIDÉOS */
+
+
+/* LES VIDÉOS YOUTUBE */
+.video {
+    margin :20px 0px 20px 20px;
+    border-radius: 10px;
+}
+
+iframe {
+    border-radius: 10px;
+}
+
+div.sketchfab-embed-wrapper {
+    width:100%;
+}
+div.titre {
+    text-transform : uppercase;
+    font-weight: bold;
+	text-align : center;
+    margin-bottom: 20px;
+}
+
+
+
+/* SECTION MÉTHODOLOGIE (FIN) */
+
+ .grise2 {
+    background: url(triangle1white.svg) no-repeat center  top/100%;
+    background-color: var(--couleur2);
+    height : 300px;
+}
+
+section.grise2 div.separateur {
+    height:1px;
+    background-color: #979797;
+    width : 150px;
+    margin : 20px auto;
+}
+
+section.grise2 .fin {
+    width : 60%;
+    margin : 10px auto;
+    text-align: center;
+    padding-top : 100px;
+}
+
+section.grise2 .fin p {
+    font-size : 22px;
+    text-align: justify;
+    margin-top : 15px;
+    margin-left : auto;
+    margin-right: auto;
+    line-height: 1.8;
+}
+
+/* RESPONSIVE DESIGN */
+@media only screen and (min-width: 502px)and (max-width: 767px) {
+    /* HEADER */
+    header {
+        height : 350px;
+    }
+    
+    header h1 {
+        font-size : 2.5em; 
+        padding : 30px 10px 0px 10px;
+    }
+    
+    header div.separateur {
+        height:2px;
+        width : 80%
+    }
+    
+    header h2 {
+        font-size: 1.9em;
+        margin-left : 20px;
+        margin-right: 10px;
+        padding : 0px 10px 30px 10px;
+    }
+
+    nav li {font-size: 1em;}
+
+    nav ul {margin : 0 5px; padding : 8px 0;}
+
+    div.bandeau {
+        width: 40%;
+        padding : 10px 10px auto auto;
+        /* margin-right: 40px; */
+        min-width: 176px;
+        /* padding : 0 0; */
+        background-color: BLACK;
+        border : 2px solid white;
+        transform-origin: 0 0;
+        transform: none;
+    }
+
+    i.fa-arrow-alt-circle-right {display: inline;}
+    i.fa-flask {display: none;}
+
+    /* SECTION GRISE 1 */
+    section.grise {
+        height : 900px;
+    }
+    
+    section.grise div.separateur {
+        height:2px;
+    }
+    
+    section.grise .intro {
+        width : 90%;
+        padding-top : 30px;
+    }
+    
+    section.grise .intro p {
+        font-size : 2.0em;
+    }
+
+/* SECTION VIDÉOS */
+
+/* PROJETS (flex items) */
+#parent {
+	display : flex;
+	flex-wrap : wrap;
+	justify-content : center;
+    z-index :0;
+}
+
+.enfant {
+	width : 80%;
+}
+
+.enfant:first-child {
+	margin-top: 60px;
+}
+
+div.enfant .separateur {
+    height:2px;
+    width : 120px;
+}
+
+.enfant:hover{
+	border: 10px solid;
+}
+
+.enfant1:hover{border-color: rgb(98, 98, 243);}  
+
+.enfant2:hover{border-color: rgb(34, 247, 44);} 
+
+.enfant3:hover{border-color: rgb(247, 62, 62);}
+
+.enfant4:hover{border-color: rgb(243, 174, 62);}
+
+
+/* ÉTIQUETTE SUR FOND NOIR */
+div.etiquette {
+    top : -50px;
+}
+
+p.domaine {
+    font-size: 2.0em;
+}
+
+
+/* LES VIDÉOS YOUTUBE */
+.video {
+    margin :30px 0px 20px 20px;
+}
+
+.video iframe {
+    height: 344px;
+}
+
+div.titre {
+    font-size : 2.0em;
+}
+
+
+/* TABLE DE CONTENU D'UNE SÉANCE */
+table p.numero {
+    width:50px; height:50px;
+    font-size: 1.5em;
+    padding-top: 10px;
+    box-sizing: border-box;
+}
+
+table td:first-child {
+    vertical-align: top;
+}
+
+.description td:nth-child(2) {
+    color:gray;
+    text-align: left;
+    padding-left:10px;
+    font-size : 1.5em;
+    padding-bottom: 20px;
+}
+
+.description {
+    border-radius : 10px;
+    margin-left : 20px;
+}
+
+/* SECTION MÉTHODOLOGIE (FIN) */
+
+.grise2 {
+    height : 350px;
+}
+
+section.grise2 .fin {
+    padding : 30px 10px;
+    width : 92%;
+    margin-top : 10px;
+}
+
+section.grise2 .fin p {
+    font-size : 2.0em;
+    line-height: 1.8;
+}
+
+
+}
+
+@media only screen and (max-width: 501px) {
+    /* HEADER */
+    header {
+        height : 300px;
+    }
+    
+    header h1 {
+        font-size : 2.0em; 
+        padding : 30px 10px 0px 10px;
+    }
+    
+    header div.separateur {
+        height:2px;
+        width : 80%
+    }
+    
+    header h2 {
+        font-size: 1.9em;
+        margin-left : 20px;
+        margin-right: 10px;
+        padding : 0px 10px 30px 10px;
+    }
+
+    nav li {font-size: 1em;}
+
+    nav ul {margin : 0 5px; padding : 8px 0;}
+
+    div.bandeau {
+        width: 40%;
+        min-width: 176px;
+        padding : 10px 10px auto auto;
+        /* margin-right: 40px; */
+        /* padding : 0 0; */
+        background-color: BLACK;
+        border : 2px solid white;
+        transform-origin: 0 0;
+        transform: none;
+    }
+
+    i.fa-arrow-alt-circle-right {display: inline;}
+    i.fa-flask {display: none;}
+
+    /* SECTION GRISE 1 */
+    section.grise {
+        height : 750px;
+    }
+    
+    section.grise div.separateur {
+        height:2px;
+    }
+    
+    section.grise .intro {
+        width : 90%;
+        padding-top : 30px;
+    }
+    
+    section.grise .intro p {
+        font-size : 1.5em;
+    }
+
+/* SECTION VIDÉOS */
+
+/* PROJETS (flex items) */
+#parent {
+	display : flex;
+	flex-wrap : wrap;
+	justify-content : center;
+    z-index :0;
+}
+
+.enfant {
+	width : 90%;
+}
+
+.enfant:first-child {
+	margin-top: 60px;
+}
+
+div.enfant .separateur {
+    height:2px;
+    width : 120px;
+}
+
+.enfant:hover{
+	border: 10px solid;
+}
+
+.enfant1:hover{border-color: rgb(98, 98, 243);}  
+
+.enfant2:hover{border-color: rgb(34, 247, 44);} 
+
+.enfant3:hover{border-color: rgb(247, 62, 62);}
+
+.enfant4:hover{border-color: rgb(243, 174, 62);}
+
+
+/* ÉTIQUETTE SUR FOND NOIR */
+div.etiquette {
+    top : -30px;
+}
+
+p.domaine {
+    font-size: 2.0em;
+}
+
+
+/* LES VIDÉOS YOUTUBE */
+.video {
+    margin :30px 0px 20px 20px;
+}
+
+.video iframe {
+    height: 344px;
+}
+
+div.titre {
+    font-size : 1.5em;
+}
+
+
+/* TABLE DE CONTENU D'UNE SÉANCE */
+table p.numero {
+    width:50px; height:50px;
+    font-size: 1.25em;
+    padding-top: 15px;
+}
+
+table td:first-child {
+    vertical-align: top;
+}
+
+.description td:nth-child(2) {
+    color:gray;
+    text-align: left;
+    padding-left:10px;
+    font-size : 1.25em;
+    padding-bottom: 20px;
+}
+
+.description {
+    border-radius : 10px;
+    margin-left : 20px;
+}
+
+/* SECTION MÉTHODOLOGIE (FIN) */
+
+.grise2 {
+    height : 380px;
+}
+
+section.grise2 .fin {
+    padding : 20px 10px;
+    width : 92%;
+    padding-top : 70px;
+    margin-top: 20px;
+
+}
+
+section.grise2 .fin p {
+    font-size : 1.5em;
+}
+
+
+}
+
+
+   
