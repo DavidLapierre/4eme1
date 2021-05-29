@@ -101,8 +101,8 @@ section.grise .intro {
 section.grise .intro p {
     font-size : 22px;
     text-align: justify;
-    margin-left : auto;
-    margin-right: auto;
+    margin-left : 20px;
+    margin-right: 20px;
     line-height: 1.8;
 }
 
@@ -136,7 +136,19 @@ section.blanche .intro p {
 }
 
 /* SECTION VIDÉOS */
+div.quizz {
+    float : right;
+    width:40%;
+    padding-top :80px;
+}
 
+div.illustration {
+    display:inline-block;
+    width:55%;
+}
+div.illustration img {
+    width:100%;
+}
 
 /* LES VIDÉOS YOUTUBE */
 .video {
