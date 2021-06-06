@@ -70,6 +70,7 @@ i.fa-arrow-alt-circle-right {display: none;}
 header h1, header h2 {
     text-align: center;
     text-shadow: 0 0 5px black;
+    text-transform: uppercase;
 }
 
 header h1 {
@@ -256,7 +257,7 @@ section.grise2 .fin p {
 
     nav ul {margin : 0 5px; padding : 8px 0;}
 
-    div.bandeau {
+    div.bandeau1 {
         width: 40%;
         padding : 10px 10px auto auto;
         /* margin-right: 40px; */
@@ -266,6 +267,23 @@ section.grise2 .fin p {
         border : 2px solid white;
         transform-origin: 0 0;
         transform: none;
+        box-shadow: 0 10px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+    }
+
+    
+    div.bandeau2:hover,div.bandeau1:hover {
+        box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+        font-size: 1.1em;
+    }
+    div.bandeau2 {
+        width: 40%;
+        margin-right: 0;
+        margin-left: auto;
+        background-color: BLACK;
+        border : 2px solid white;
+        transform-origin: 0 0;
+        transform: translate(0px,-40px);
+        box-shadow: 0 10px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
     }
 
     i.fa-arrow-alt-circle-right {display: inline;}
@@ -278,7 +296,7 @@ section.grise2 .fin p {
     
     section.grise div.separateur {
         height:2px;
-        
+
     }
     
     section.grise .intro {
@@ -359,7 +377,7 @@ div.quizz {
 
 @media only screen and (max-width: 569px) {
     /* HEADER */
-    /* header {
+   header {
         height : 300px;
     }
     
@@ -384,10 +402,10 @@ div.quizz {
 
     nav ul {margin : 0 5px; padding : 8px 0;}
 
-    div.bandeau {
+    /* div.bandeau {
         width: 40%;
         min-width: 176px;
-        padding : 10px 10px auto auto; */
+        padding : 10px 10px auto auto; */ */
         /* margin-right: 40px; */
         /* padding : 0 0; */
         /* background-color: BLACK;
@@ -400,7 +418,7 @@ div.quizz {
     i.fa-flask {display: none;} */
 
     /* SECTION GRISE 1 */
-    /* section.grise {
+     section.grise {
         height : 750px;
     }
     
@@ -411,7 +429,8 @@ div.quizz {
     section.grise .intro {
         width : 97%;
         padding-top : 30px;
-    /* } */
+        /* font-size : 1.1em; */
+    } 
     
     section.grise .intro p {
         font-size : 1.3em;
